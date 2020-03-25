@@ -43,13 +43,14 @@ int main(void)
   printf("\n%s", "Please write the color of the third ring: \n");
   scanf("%s", ring3);
 
-  int value1 = assigne(bague1);
-  int value2 = assigne(bague2);
-  int value3 = assigne(bague3);
+  int value1 = assigne(ring1);
+  int value2 = assigne(ring2);
+  int value3 = assigne(ring3);
 
   int result = (value1 * 10 + value2) * pow(10, value3);
 
   printf("\nThe resistor value is %d Ω.\n", result);
+  scanf("%s", "Press enter to exit");
 
   return (0);
 }
